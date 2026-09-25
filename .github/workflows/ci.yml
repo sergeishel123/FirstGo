@@ -7,9 +7,9 @@ name: Go CI
 # Это вроде триггерами тут тоже называется(при срабатывании них запускается Continuous Integration на GitHub и начинаются проверки)
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "main"]
 
 
 
