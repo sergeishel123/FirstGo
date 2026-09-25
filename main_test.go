@@ -31,17 +31,17 @@ func TestDaysToNewYear(t *testing.T) {
 			expected: 1,
 		},
 		{
-			id:       3, // 1 января
+			id:       3,
 			date:     time.Date(2024, time.January, 1, 0, 0, 0, 0, time.UTC),
 			expected: 366, // 2024 високосный
 		},
 		{
-			id:       4, // 1 марта
+			id:       4,
 			date:     time.Date(2024, time.March, 1, 0, 0, 0, 0, time.UTC),
 			expected: 306,
 		},
 		{
-			id:       5, // 1 июля
+			id:       5,
 			date:     time.Date(2023, time.July, 1, 0, 0, 0, 0, time.UTC),
 			expected: 184,
 		},
