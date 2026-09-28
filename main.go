@@ -13,7 +13,7 @@ func DaysToNewYear(t time.Time) int {
 	return int(delta.Hours() / 24)
 }
 
-// Новый обработчик HTTP-запросов (Шаг 5 задания)
+// с HHTP работа
 func apiHandler(Response http.ResponseWriter, Request *http.Request) {
 
 	// Дату выцепляю как параметр Get-запроса date
