@@ -60,8 +60,7 @@ func main() {
 	// Обработчик Get - запросов сделал по пути SergeyAndDays
 	http.HandleFunc("/SergeyAndDays", apiHandler)
 
-	// Теперь по пути http://localhost:8080/SergeyAndDays по идее можно обращаться для расчёта кол-ва дней
+	//  http://localhost:8080/SergeyAndDays
 
-	// Запуск сервера локально  (порт 8080)
 	http.ListenAndServe(":8080", nil)
 }

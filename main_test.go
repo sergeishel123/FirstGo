@@ -87,7 +87,7 @@ func TestHTTPHandler(t *testing.T) {
 		expectError    bool
 	}{
 		{
-			name:           "Вообще дату не передаем в в запросе",
+			name:           "Вообще дату не передаем в запросе",
 			query:          "",
 			expectedStatus: http.StatusOK,
 			expectError:    false,
@@ -119,13 +119,11 @@ func TestHTTPHandler(t *testing.T) {
 			// регистратор ответа
 			w := httptest.NewRecorder()
 
-			// Вызываем обработчик
 			apiHandler(w, request)
 
 			res := w.Result()
 			defer res.Body.Close()
 
-			//  HTTP Status
 			if res.StatusCode != tt.expectedStatus {
 				t.Errorf("Ожидаемый статус %d,а  получен %d", tt.expectedStatus, res.StatusCode)
 			}
