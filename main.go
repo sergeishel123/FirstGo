@@ -26,9 +26,8 @@ func apiHandler(Response http.ResponseWriter, Request *http.Request) {
 		date = time.Now()
 	} else {
 
-		// Пытаюсь распарсить дату в классическом виде
-
-		date, err = time.Parse("2026-09-25", dateInQuery)
+		// Пытаюсь распарсить дату в классическом виде(в GO видимо )
+		date, err = time.Parse("2006-01-02", dateInQuery)
 		if err != nil { // Я наконец понял, что функции в Go зачастую возвращают вторым результатом ошибку. Если она не пустая(не nil), то плохо
 
 			// Если формат неверный, возвращаем и JSON с ошибкой, статус response 400
