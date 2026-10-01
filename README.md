@@ -1,4 +1,4 @@
-# Days to New Year
+** Days to New Year **
 
 ## Назначение приложения
 
