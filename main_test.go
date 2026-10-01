@@ -90,6 +90,7 @@ func TestHTTPHandler(t *testing.T) {
 			name:           "Вообще дату не передаем в запросе",
 			query:          "",
 			expectedStatus: http.StatusOK,
+			expectedDays:   DaysToNewYear(time.Now()),
 			expectError:    false,
 		},
 		{
