@@ -12,7 +12,8 @@
 ## Способ сборки
 
 ```bash
-go build -o days-to-new-year .
+go build -o days-to-new-year 
+
 
 ## Способ запуска
 bash
