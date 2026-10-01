@@ -17,7 +17,6 @@ go build -o days-to-new-year .
 ## Способ запуска
 bash
 go run.
-
 или (после сборки):
 bash
 ./days-to-new-year
